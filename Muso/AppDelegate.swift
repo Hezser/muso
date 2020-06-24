@@ -12,11 +12,37 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    var auth = SPTAuth()
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        auth.redirectURL = URL(string: "muso-login://returnAfterLogin")
+        auth.sessionUserDefaultsKey = "current session"
+        
         return true
+    }
+    
+    func application(_ application: UIApplication, open url: URL, sourceApplication: String?, annotation: Any) -> Bool {
+        // Check if app can handle redirect URL
+        if auth.canHandle(auth.redirectURL) {
+            // Handle callback in closure
+            auth.handleAuthCallback(withTriggeredAuthURL: url, callback: { (error, session) in
+                // Handle error
+                if error != nil {
+                    print("error!")
+                }
+                // Add session to User Defaults
+                let userDefaults = UserDefaults.standard
+                let sessionData = NSKeyedArchiver.archivedData(withRootObject: session!)
+                userDefaults.set(sessionData, forKey: "SpotifySession")
+                userDefaults.synchronize()
+                // Tell notification center login is successful
+                NotificationCenter.default.post(name: Notification.Name(rawValue: "loginSuccessfull"), object: nil)
+            })
+            return true
+        }
+        return false
     }
 
     func applicationWillResignActive(_ application: UIApplication) {

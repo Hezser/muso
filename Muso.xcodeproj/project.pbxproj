@@ -7,21 +7,57 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		955880FE8D4CF7FE0E36CE53 /* Pods_Muso.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D8A614BDE20133AF5A0BA46 /* Pods_Muso.framework */; };
+		D642E6621F1BE94D00E594B6 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = D642E6611F1BE94D00E594B6 /* Model.swift */; };
+		D64671051F210178001BF3DE /* PagesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64671041F210178001BF3DE /* PagesController.swift */; };
+		D64671071F21062D001BF3DE /* Searcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64671061F21062D001BF3DE /* Searcher.swift */; };
+		D65419D31F1AA53B004D19C0 /* Navigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65419D21F1AA53B004D19C0 /* Navigator.swift */; };
+		D65419D51F1AACF2004D19C0 /* PlayerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65419D41F1AACF2004D19C0 /* PlayerController.swift */; };
+		D668DE871F1A975000C21480 /* SongListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D668DE861F1A975000C21480 /* SongListController.swift */; };
+		D67A3A4A1F2656C90023755D /* MusicTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D67A3A491F2656C90023755D /* MusicTabController.swift */; };
+		D6A9FBE71F240008003B64FA /* SongCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A9FBE61F240008003B64FA /* SongCell.swift */; };
 		D6FFD04A1F1A599200647F44 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6FFD0491F1A599200647F44 /* AppDelegate.swift */; };
-		D6FFD04C1F1A599200647F44 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6FFD04B1F1A599200647F44 /* ViewController.swift */; };
+		D6FFD04C1F1A599200647F44 /* LogInController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6FFD04B1F1A599200647F44 /* LogInController.swift */; };
 		D6FFD04F1F1A599200647F44 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6FFD04D1F1A599200647F44 /* Main.storyboard */; };
 		D6FFD0511F1A599200647F44 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D6FFD0501F1A599200647F44 /* Assets.xcassets */; };
 		D6FFD0541F1A599200647F44 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6FFD0521F1A599200647F44 /* LaunchScreen.storyboard */; };
+		D6FFD0611F1A5B9A00647F44 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6FFD0601F1A5B9A00647F44 /* AVFoundation.framework */; };
+		D6FFD0631F1A5BA800647F44 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6FFD0621F1A5BA800647F44 /* SystemConfiguration.framework */; };
+		D6FFD0671F1A5DD700647F44 /* BridgeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6FFD0661F1A5DD700647F44 /* BridgeViewController.m */; };
+		D6FFD06D1F1A61BF00647F44 /* SpotifyAudioPlayback.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6FFD06C1F1A61BF00647F44 /* SpotifyAudioPlayback.framework */; };
+		D6FFD06F1F1A61DC00647F44 /* SpotifyAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6FFD06E1F1A61DC00647F44 /* SpotifyAuthentication.framework */; };
+		D6FFD0711F1A61E500647F44 /* SpotifyMetadata.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6FFD0701F1A61E500647F44 /* SpotifyMetadata.framework */; };
+		D6FFD0731F1A722B00647F44 /* PlaylistsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6FFD0721F1A722B00647F44 /* PlaylistsController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1D8A614BDE20133AF5A0BA46 /* Pods_Muso.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Muso.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		230B386A49C49E6A3635BB3E /* Pods-Muso.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Muso.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Muso/Pods-Muso.debug.xcconfig"; sourceTree = "<group>"; };
+		A05B28563D706C21093A3ECC /* Pods-Muso.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Muso.release.xcconfig"; path = "Pods/Target Support Files/Pods-Muso/Pods-Muso.release.xcconfig"; sourceTree = "<group>"; };
+		D642E6611F1BE94D00E594B6 /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		D64671041F210178001BF3DE /* PagesController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PagesController.swift; sourceTree = "<group>"; };
+		D64671061F21062D001BF3DE /* Searcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Searcher.swift; sourceTree = "<group>"; };
+		D65419D21F1AA53B004D19C0 /* Navigator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Navigator.swift; sourceTree = "<group>"; };
+		D65419D41F1AACF2004D19C0 /* PlayerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerController.swift; sourceTree = "<group>"; };
+		D668DE861F1A975000C21480 /* SongListController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SongListController.swift; sourceTree = "<group>"; };
+		D67A3A491F2656C90023755D /* MusicTabController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicTabController.swift; sourceTree = "<group>"; };
+		D6A9FBE61F240008003B64FA /* SongCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SongCell.swift; sourceTree = "<group>"; };
 		D6FFD0461F1A599100647F44 /* Muso.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Muso.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6FFD0491F1A599200647F44 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D6FFD04B1F1A599200647F44 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D6FFD04B1F1A599200647F44 /* LogInController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInController.swift; sourceTree = "<group>"; };
 		D6FFD04E1F1A599200647F44 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D6FFD0501F1A599200647F44 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D6FFD0531F1A599200647F44 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D6FFD0551F1A599200647F44 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D6FFD0601F1A5B9A00647F44 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		D6FFD0621F1A5BA800647F44 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		D6FFD0641F1A5DD700647F44 /* Muso-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Muso-Bridging-Header.h"; sourceTree = "<group>"; };
+		D6FFD0651F1A5DD700647F44 /* BridgeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BridgeViewController.h; sourceTree = "<group>"; };
+		D6FFD0661F1A5DD700647F44 /* BridgeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BridgeViewController.m; sourceTree = "<group>"; };
+		D6FFD06C1F1A61BF00647F44 /* SpotifyAudioPlayback.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpotifyAudioPlayback.framework; path = ../SpotifyAudioPlayback.framework; sourceTree = "<group>"; };
+		D6FFD06E1F1A61DC00647F44 /* SpotifyAuthentication.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SpotifyAuthentication.framework; sourceTree = "<group>"; };
+		D6FFD0701F1A61E500647F44 /* SpotifyMetadata.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SpotifyMetadata.framework; sourceTree = "<group>"; };
+		D6FFD0721F1A722B00647F44 /* PlaylistsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaylistsController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +65,34 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D6FFD0711F1A61E500647F44 /* SpotifyMetadata.framework in Frameworks */,
+				D6FFD0631F1A5BA800647F44 /* SystemConfiguration.framework in Frameworks */,
+				D6FFD06F1F1A61DC00647F44 /* SpotifyAuthentication.framework in Frameworks */,
+				D6FFD0611F1A5B9A00647F44 /* AVFoundation.framework in Frameworks */,
+				D6FFD06D1F1A61BF00647F44 /* SpotifyAudioPlayback.framework in Frameworks */,
+				955880FE8D4CF7FE0E36CE53 /* Pods_Muso.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		20234743A691858BEA998EE0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				230B386A49C49E6A3635BB3E /* Pods-Muso.debug.xcconfig */,
+				A05B28563D706C21093A3ECC /* Pods-Muso.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		D6FFD03D1F1A599100647F44 = {
 			isa = PBXGroup;
 			children = (
 				D6FFD0481F1A599100647F44 /* Muso */,
 				D6FFD0471F1A599100647F44 /* Products */,
+				D6FFD05B1F1A59DA00647F44 /* Frameworks */,
+				20234743A691858BEA998EE0 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,13 +108,38 @@
 			isa = PBXGroup;
 			children = (
 				D6FFD0491F1A599200647F44 /* AppDelegate.swift */,
-				D6FFD04B1F1A599200647F44 /* ViewController.swift */,
+				D642E6611F1BE94D00E594B6 /* Model.swift */,
+				D67A3A491F2656C90023755D /* MusicTabController.swift */,
+				D6A9FBE61F240008003B64FA /* SongCell.swift */,
+				D64671061F21062D001BF3DE /* Searcher.swift */,
+				D64671041F210178001BF3DE /* PagesController.swift */,
+				D6FFD04B1F1A599200647F44 /* LogInController.swift */,
+				D6FFD0721F1A722B00647F44 /* PlaylistsController.swift */,
+				D668DE861F1A975000C21480 /* SongListController.swift */,
+				D65419D41F1AACF2004D19C0 /* PlayerController.swift */,
+				D65419D21F1AA53B004D19C0 /* Navigator.swift */,
 				D6FFD04D1F1A599200647F44 /* Main.storyboard */,
 				D6FFD0501F1A599200647F44 /* Assets.xcassets */,
 				D6FFD0521F1A599200647F44 /* LaunchScreen.storyboard */,
 				D6FFD0551F1A599200647F44 /* Info.plist */,
+				D6FFD0651F1A5DD700647F44 /* BridgeViewController.h */,
+				D6FFD0661F1A5DD700647F44 /* BridgeViewController.m */,
+				D6FFD0641F1A5DD700647F44 /* Muso-Bridging-Header.h */,
+				D6FFD0701F1A61E500647F44 /* SpotifyMetadata.framework */,
+				D6FFD06E1F1A61DC00647F44 /* SpotifyAuthentication.framework */,
+				D6FFD06C1F1A61BF00647F44 /* SpotifyAudioPlayback.framework */,
 			);
 			path = Muso;
+			sourceTree = "<group>";
+		};
+		D6FFD05B1F1A59DA00647F44 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D6FFD0621F1A5BA800647F44 /* SystemConfiguration.framework */,
+				D6FFD0601F1A5B9A00647F44 /* AVFoundation.framework */,
+				1D8A614BDE20133AF5A0BA46 /* Pods_Muso.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +149,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D6FFD0581F1A599200647F44 /* Build configuration list for PBXNativeTarget "Muso" */;
 			buildPhases = (
+				2F7380113F9B22915A32708B /* [CP] Check Pods Manifest.lock */,
 				D6FFD0421F1A599100647F44 /* Sources */,
 				D6FFD0431F1A599100647F44 /* Frameworks */,
 				D6FFD0441F1A599100647F44 /* Resources */,
+				491EBB6DADBD4164D58252C9 /* [CP] Embed Pods Frameworks */,
+				71B9DB4E34C56F2F4D9C6366 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -97,6 +178,7 @@
 					D6FFD0451F1A599100647F44 = {
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = TD9JF96X99;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -132,13 +214,71 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2F7380113F9B22915A32708B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		491EBB6DADBD4164D58252C9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Muso/Pods-Muso-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		71B9DB4E34C56F2F4D9C6366 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Muso/Pods-Muso-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		D6FFD0421F1A599100647F44 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D6FFD04C1F1A599200647F44 /* ViewController.swift in Sources */,
+				D64671071F21062D001BF3DE /* Searcher.swift in Sources */,
+				D6A9FBE71F240008003B64FA /* SongCell.swift in Sources */,
+				D67A3A4A1F2656C90023755D /* MusicTabController.swift in Sources */,
+				D6FFD0671F1A5DD700647F44 /* BridgeViewController.m in Sources */,
+				D6FFD04C1F1A599200647F44 /* LogInController.swift in Sources */,
+				D6FFD0731F1A722B00647F44 /* PlaylistsController.swift in Sources */,
+				D668DE871F1A975000C21480 /* SongListController.swift in Sources */,
+				D65419D51F1AACF2004D19C0 /* PlayerController.swift in Sources */,
 				D6FFD04A1F1A599200647F44 /* AppDelegate.swift in Sources */,
+				D65419D31F1AA53B004D19C0 /* Navigator.swift in Sources */,
+				D642E6621F1BE94D00E594B6 /* Model.swift in Sources */,
+				D64671051F210178001BF3DE /* PagesController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,26 +401,45 @@
 		};
 		D6FFD0591F1A599200647F44 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 230B386A49C49E6A3635BB3E /* Pods-Muso.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = TD9JF96X99;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Muso",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = Muso/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = SH.Muso;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = com.SergioHernandez.Muso;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Muso/Muso-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
 		D6FFD05A1F1A599200647F44 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A05B28563D706C21093A3ECC /* Pods-Muso.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = TD9JF96X99;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Muso",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = Muso/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = SH.Muso;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = com.SergioHernandez.Muso;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Muso/Muso-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -304,6 +463,7 @@
 				D6FFD05A1F1A599200647F44 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

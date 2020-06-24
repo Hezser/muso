@@ -1,14 +1,20 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--LoggedIn-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="LoggedIn" id="BYZ-38-t0r" customClass="LogInController" customModule="Muso" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,11 +22,249 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fRt-50-PB8">
+                                <rect key="frame" x="102" y="313" width="171" height="40"/>
+                                <color key="backgroundColor" red="0.18235525488853455" green="0.73930728435516357" blue="0.34723824262619019" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="171" id="jWE-uA-skA" userLabel="width = 200"/>
+                                    <constraint firstAttribute="width" secondItem="fRt-50-PB8" secondAttribute="height" multiplier="171:46" constant="48.326086956521735" id="noy-Vt-wvM" userLabel="width = 8.09 × height (171:46)"/>
+                                </constraints>
+                                <state key="normal" title="Log In with Spotify">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="loginButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9rX-7F-e0C"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.10005459934473038" green="0.1480676531791687" blue="0.20212012529373169" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="fRt-50-PB8" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="5Hs-gL-1mX"/>
+                            <constraint firstItem="fRt-50-PB8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="pFv-Wb-XaO"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="loginButton" destination="fRt-50-PB8" id="Ufv-Mn-w9d"/>
+                        <segue destination="HBB-3Q-cga" kind="show" identifier="LoggedIn" id="mEW-wo-HER"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-852" y="139"/>
+        </scene>
+        <!--Pages Controller-->
+        <scene sceneID="u2l-8d-W0J">
+            <objects>
+                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="pageCurl" navigationOrientation="horizontal" spineLocation="min" id="HBB-3Q-cga" customClass="PagesController" customModule="Muso" customModuleProvider="target" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7ac-QP-0br" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-154" y="139"/>
+        </scene>
+        <!--Music Tab Controller-->
+        <scene sceneID="Kz5-hb-QLm">
+            <objects>
+                <viewController storyboardIdentifier="MusicTabController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="r8d-hk-zYV" customClass="MusicTabController" customModule="Muso" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="MRC-rP-jOt"/>
+                        <viewControllerLayoutGuide type="bottom" id="udE-gw-VRP"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="FiP-7Z-hH6">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tabBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qrP-Ex-xYT">
+                                <rect key="frame" x="0.0" y="28" width="375" height="49"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <items>
+                                    <tabBarItem title="Your Playlists" id="Y5z-TA-lo8"/>
+                                    <tabBarItem title="Discover" id="9lz-m3-CK5"/>
+                                </items>
+                            </tabBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="bar" destination="qrP-Ex-xYT" id="Bv6-8W-KFA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CAI-Iy-3HY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-494" y="878"/>
+        </scene>
+        <!--Navigator-->
+        <scene sceneID="3MJ-QD-U2D">
+            <objects>
+                <navigationController storyboardIdentifier="SearchNavigator" useStoryboardIdentifierAsRestorationIdentifier="YES" id="adK-Ox-zYK" customClass="Navigator" customModule="Muso" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Vck-fe-OKd">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="ssM-KS-p7N" kind="relationship" relationship="rootViewController" id="CxZ-wE-EnO"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yec-zT-ts2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="545" y="879"/>
+        </scene>
+        <!--Search-->
+        <scene sceneID="uXe-o5-F7E">
+            <objects>
+                <tableViewController storyboardIdentifier="Searcher" title="Search" useStoryboardIdentifierAsRestorationIdentifier="YES" id="ssM-KS-p7N" customClass="Searcher" customModule="Muso" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="XDI-pD-CmE">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SearchCell" id="04o-ql-oYC" customClass="SongCell" customModule="Muso" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="04o-ql-oYC" id="qwY-T8-Ssl">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                                <color key="backgroundColor" red="0.10005459934473038" green="0.1480676531791687" blue="0.20212012529373169" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="ssM-KS-p7N" id="j4W-iG-l3m"/>
+                            <outlet property="delegate" destination="ssM-KS-p7N" id="WN3-Te-i1f"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="z1a-XH-tbo"/>
+                    <connections>
+                        <segue destination="8SD-Ub-9y7" kind="show" identifier="ReproduceSearchedTrack" id="mcb-hj-div"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Vef-2I-zjb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1313" y="880"/>
+        </scene>
+        <!--Playlists Controller-->
+        <scene sceneID="gVc-QS-KLw">
+            <objects>
+                <tableViewController storyboardIdentifier="PlaylistsPage" useStoryboardIdentifierAsRestorationIdentifier="YES" id="is9-d4-D1a" customClass="PlaylistsController" customModule="Muso" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="IMn-56-SAJ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="sectionIndexColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="sectionIndexBackgroundColor" red="0.10005459934473038" green="0.1480676531791687" blue="0.20212012529373169" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PlaylistCell" id="3HM-21-edk">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="3HM-21-edk" id="Fg3-Q3-6hX">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                                <color key="backgroundColor" red="0.10005459930000001" green="0.14806765320000001" blue="0.20212012530000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="is9-d4-D1a" id="Iba-5s-itw"/>
+                            <outlet property="delegate" destination="is9-d4-D1a" id="JOk-tY-2gH"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="ePT-0W-X7V"/>
+                    <connections>
+                        <segue destination="O9i-dC-GgM" kind="show" identifier="PlaylistSelected" id="dWP-Lt-SnS"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ISi-Rs-VpS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1313" y="139"/>
+        </scene>
+        <!--Navigator-->
+        <scene sceneID="xRE-6U-aHv">
+            <objects>
+                <navigationController storyboardIdentifier="PlaylistsNavigator" useStoryboardIdentifierAsRestorationIdentifier="YES" id="WXc-oT-8VU" customClass="Navigator" customModule="Muso" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="oAD-ih-w6z">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="emY-VT-o9C">
+                        <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
+                    <connections>
+                        <segue destination="is9-d4-D1a" kind="relationship" relationship="rootViewController" id="ugY-RB-T2a"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="equ-jg-a5l" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="546" y="139"/>
+        </scene>
+        <!--Song List Controller-->
+        <scene sceneID="ts4-kA-J8l">
+            <objects>
+                <tableViewController id="O9i-dC-GgM" customClass="SongListController" customModule="Muso" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="eAs-9B-fVZ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="sectionIndexColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="sectionIndexBackgroundColor" red="0.10005459930000001" green="0.14806765320000001" blue="0.20212012530000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SongCell" id="h7L-LR-Wep" customClass="SongCell" customModule="Muso" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="h7L-LR-Wep" id="4Cc-FI-2WW">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                                <color key="backgroundColor" red="0.10005459930000001" green="0.14806765320000001" blue="0.20212012530000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="O9i-dC-GgM" id="ADz-Lm-etK"/>
+                            <outlet property="delegate" destination="O9i-dC-GgM" id="Jo3-18-Px5"/>
+                        </connections>
+                    </tableView>
+                    <connections>
+                        <segue destination="8SD-Ub-9y7" kind="show" identifier="ReproducePlaylistTrack" id="0ah-Aq-SKa"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3Ia-Qj-Ne0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2038" y="139"/>
+        </scene>
+        <!--Player-->
+        <scene sceneID="2Qm-ee-8jI">
+            <objects>
+                <viewController storyboardIdentifier="Player" title="Player" useStoryboardIdentifierAsRestorationIdentifier="YES" id="8SD-Ub-9y7" customClass="PlayerController" customModule="Muso" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="yZV-cL-o3L"/>
+                        <viewControllerLayoutGuide type="bottom" id="KUS-in-yWi"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="OXl-Dt-kij">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="6qi-GX-G7c">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="6qi-GX-G7c" firstAttribute="bottom" secondItem="KUS-in-yWi" secondAttribute="top" id="OZA-Lg-35W"/>
+                            <constraint firstItem="6qi-GX-G7c" firstAttribute="top" secondItem="OXl-Dt-kij" secondAttribute="topMargin" constant="64" id="P1J-sf-o3s"/>
+                            <constraint firstItem="6qi-GX-G7c" firstAttribute="leading" secondItem="OXl-Dt-kij" secondAttribute="leading" id="cjl-2E-pwi"/>
+                            <constraint firstAttribute="trailing" secondItem="6qi-GX-G7c" secondAttribute="trailing" id="tqd-Ii-8aZ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="coverView" destination="6qi-GX-G7c" id="VJv-xr-tBh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VNO-6x-9JX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2741.5999999999999" y="138.98050974512745"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="mcb-hj-div"/>
+    </inferredMetricsTieBreakers>
 </document>
